@@ -12,6 +12,7 @@ module.exports = {
     ],
     "extends": [
         "eslint:recommended",
+        "standard"
     ],
     "parserOptions": {
         "ecmaVersion": 2018,
