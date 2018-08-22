@@ -1,6 +1,7 @@
 #node
 node_modules
 package-lock.json
+npm-debug.log
 
 #IDE
 .idea
@@ -11,6 +12,7 @@ package-lock.json
 
 #dev
 dist
+build
 
 #custom
-local/
+local
