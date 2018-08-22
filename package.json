@@ -1,5 +1,5 @@
 {
-  "name": "@ys/codebase",
+  "name": "@ys/eslint-config-strict",
   "version": "0.0.1",
   "main":"index.js",
   "dependencies": {
