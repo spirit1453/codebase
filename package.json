@@ -42,7 +42,7 @@
     "lint": "eslint --fix .",
     "start": "",
     "task": "gulp",
-    "test": "jest --coverage"
+    "test": "npm run lint && jest --coverage"
   },
   "version": "1.0.0"
 }

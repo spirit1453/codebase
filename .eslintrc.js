@@ -1,11 +1,13 @@
 module.exports = {
     "env": {
         "es6": true,
-        node: true
+        node: true,
+        "jest/globals": true
     },
     "parser": "babel-eslint",
     "plugins": [
-        "flowtype"
+        "flowtype",
+        "jest"
     ],
     "extends": "eslint:recommended",
     "parserOptions": {
