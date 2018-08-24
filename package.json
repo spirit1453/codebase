@@ -1,8 +1,11 @@
 {
   "name": "@ys/eslint-config-strict",
   "version": "0.0.1",
+  "description": "eslint strict version",
+  "license": "MIT",
+  "repository": "https://github.com/spirit1453/codebase.git#strict_eslint",
   "main": "index.js",
-  "dependencies": {
+  "peerDependencies": {
     "babel-eslint": "^8.2.6",
     "eslint-config-standard": "^11.0.0",
     "eslint-plugin-flowtype": "^2.50.0",

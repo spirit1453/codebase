@@ -24,7 +24,6 @@ module.exports = {
         }
     },
     "rules": {
-        "react/prop-types":0,
         "no-inner-declarations": 0,
         "consistent-return": 2,
         "no-proto": 2,
