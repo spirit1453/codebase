@@ -1,5 +1,15 @@
+const path = require('path')
+const rootPath = path.resolve(__dirname, '../')
+const commonPackage = require(path.resolve(rootPath, 'node_modules/@ys/common_dependency/package.json'))
 
-test('adds 1 + 2 to equal 3', () => {
-  expect(3)
-    .toBe(3)
+function f () {
+  const {dependencies} = commonPackage
+
+  for (let ele in dependencies) {
+    /* eslint-disable global-require */
+    require(ele)
+  }
+}
+test('common dependencies installed', () => {
+  expect(f).not.toThrow()
 })
