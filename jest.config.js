@@ -9,5 +9,5 @@ fse.ensureDirSync(coverageFolder)
 module.exports = {
   bail: true,
   collectCoverage: true,
-  coverageDirectory: coverageFolder,
+  coverageDirectory: coverageFolder
 }
