@@ -1,8 +1,8 @@
 {
-  "name": "@ys/eslint-config-strict",
+  "name": "@ys/eslint-config-loose",
   "version": "0.0.1",
   "main": "index.js",
   "dependencies": {
-    "eslint-config-standard": "^11.0.0"
   }
+
 }
