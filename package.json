@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "main": "index.js",
   "dependencies": {
-    "eslint-config-standard": "^11.0.0"
+    "babel-eslint": "^8.2.6",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-flowtype": "^2.50.0",
+    "eslint-plugin-jest": "^21.21.0"
   }
 }
