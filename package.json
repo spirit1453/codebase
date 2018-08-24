@@ -1,7 +1,56 @@
 {
-  "name": "@ys/collection",
-  "version": "0.0.1",
+  "author": "",
+  "bin": [],
+  "bugs": {
+    "url": ""
+  },
   "dependencies": {
-    
-  }
+    "debug": "^3.1.0",
+    "fs-extra": "^7.0.0",
+    "lodash": "^4.17.10",
+    "uuid": "^3.3.2",
+    "winston": "^3.0.0"
+  },
+  "description": "",
+  "devDependencies": {
+    "@ys/eslint-config-strict": "git+https://github.com/spirit1453/codebase.git#strict_eslint",
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.6",
+    "babel-preset-flow": "^6.23.0",
+    "esdoc": "^1.1.0",
+    "esdoc-standard-plugin": "^1.0.0",
+    "eslint": "^5.2.0",
+    "eslint-plugin-flowtype": "^2.50.0",
+    "eslint-plugin-jest": "^21.18.0",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^4.0.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "flow-remove-types": "^1.2.3",
+    "husky": "^0.14.3",
+    "jest": "^23.4.2"
+  },
+  "homepage": "",
+  "keywords": [],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "@ys/collection",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "build": "babel src/ -d lib/",
+    "dev": "",
+    "doc": "esdoc && open ./docs/index.html",
+    "lint": "eslint --fix .",
+    "precommit": "npm test",
+    "preinstall": "node bin/preinstall",
+    "prepush": "npm test",
+    "start": "",
+    "task": "gulp",
+    "test": "npm run lint && jest --coverage"
+  },
+  "version": "1.0.0"
 }
