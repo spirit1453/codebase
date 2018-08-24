@@ -34,12 +34,12 @@
   "name": "@ys/collection",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/spirit1453/codebase.git#js_collection"
   },
   "scripts": {
     "build": "babel src/ -d lib/",
     "dev": "",
-    "doc": "esdoc && open ./docs/index.html",
+    "doc": "esdoc && open ./local/docs/index.html",
     "jest": "jest --coverage",
     "lint": "eslint --fix .",
     "precommit": "npm test",
