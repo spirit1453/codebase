@@ -1,8 +1,12 @@
 {
-  "name": "@ys/eslint-config-strict",
+  "name": "@ys/common_dependency",
   "version": "0.0.1",
   "main": "index.js",
   "dependencies": {
-    "eslint-config-standard": "^11.0.0"
+    "debug": "^3.1.0",
+    "fs-extra": "^7.0.0",
+    "lodash": "^4.17.10",
+    "uuid": "^3.3.2",
+    "winston": "^3.0.0"
   }
 }
