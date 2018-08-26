@@ -38,6 +38,7 @@
   },
   "scripts": {
     "build": "babel src/ -d lib/",
+    "coverage":"node bin/coverage",
     "dev": "",
     "doc": "esdoc && open ./local/docs/index.html",
     "jest": "jest --coverage",
