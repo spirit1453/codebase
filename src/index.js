@@ -1,5 +1,5 @@
 
-const ModuleUtil = require('util/ModuleUtil')
+const ModuleUtil = require('./util/ModuleUtil')
 const path = require('path')
 const rootPath = path.resolve(__dirname, '../')
 
