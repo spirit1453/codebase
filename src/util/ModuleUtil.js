@@ -3,6 +3,7 @@ const fs = require('fs')
 const {removeExt} = require('./FileUtil')
 const path = require('path')
 const debugLog = require('debug')('debug')
+const childProcess = require('child_process')
 
 class Cls {
   static requireAll (folderPath) {
@@ -17,6 +18,41 @@ class Cls {
     debugLog(`${result}`)
 
     return result
+  }
+  static installGit (packageJsonPath) {
+    const packageObj = require(packageJsonPath)
+    const {dependencies, devDependencies} = packageObj
+    const ary = [dependencies, devDependencies]
+    const projectPath = path.resolve(packageJsonPath, '..')
+
+    const promiseAry = []
+    ary.forEach(ele => {
+      const p = Cls._f(ele, projectPath)
+      promiseAry.push(p)
+    })
+    return Promise.all(promiseAry)
+  }
+  static _f (obj, cwd) {
+    const promiseAry = []
+    for (const key in obj) {
+      const value = obj[key]
+      const protocolAry = ['git', 'http', 'git+https']
+      const condition = protocolAry.some(ele => {
+        return value.startsWith(`${ele}://`)
+      })
+      const p = new Promise(resolve => {
+        if (condition) {
+          childProcess.execSync(`
+          npm i ${key}
+        `, {
+            cwd
+          })
+        }
+        resolve()
+      })
+      promiseAry.push(p)
+    }
+    return Promise.all(promiseAry)
   }
 }
 
