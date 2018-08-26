@@ -41,14 +41,14 @@
     "coverage":"node bin/coverage",
     "dev": "",
     "doc": "esdoc && open ./local/docs/index.html",
-    "jest": "jest --coverage",
+    "jest": "DEBUG=debug jest --coverage",
     "lint": "eslint --fix .",
     "precommit": "npm test",
     "preinstall": "node bin/preinstall",
     "prepush": "npm test",
     "start": "",
     "task": "gulp",
-    "test": "npm run lint && jest --coverage"
+    "test": "npm run lint && npm run jest"
   },
   "version": "0.0.1"
 }
