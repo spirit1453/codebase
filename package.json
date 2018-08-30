@@ -6,8 +6,8 @@
   "repository": "https://github.com/spirit1453/codebase.git#strict_eslint",
   "main": "index.js",
   "peerDependencies": {
-    "babel-eslint": "^8.2.6",
-    "eslint-config-standard": "^11.0.0",
+    "babel-eslint": "^5.0.4",
+    "eslint-config-standard": "^8.0.0",
     "eslint-plugin-flowtype": "^2.50.0",
     "eslint-plugin-jest": "^21.21.0"
   }
