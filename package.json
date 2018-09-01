@@ -7,9 +7,7 @@
   "author":"YS",
   "dependencies": {
     "debug": "^3.1.0",
-    "fs-extra": "^7.0.0",
     "lodash": "^4.17.10",
-    "uuid": "^3.3.2",
-    "winston": "^3.0.0"
+    "uuid": "^3.3.2"
   }
 }
