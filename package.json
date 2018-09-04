@@ -1,14 +1,12 @@
 {
-  "name": "@ys/eslint-config-strict",
+  "name": "@ys/eslint-config-rn",
   "version": "0.0.1",
-  "description": "eslint strict version",
+  "description": "react-native-eslint version",
   "license": "MIT",
   "repository": "https://github.com/spirit1453/codebase.git#strict_eslint",
   "main": "index.js",
-  "peerDependencies": {
-    "babel-eslint": "^5.0.4",
-    "eslint-config-standard": "^8.0.0",
-    "eslint-plugin-flowtype": "^2.50.0",
-    "eslint-plugin-jest": "^21.21.0"
+  "dependencies": {
+    "@ys/eslint-config-strict": "git+https://github.com/spirit1453/codebase.git#strict_eslint",
+    "eslint-plugin-react": "^7.10.0"
   }
 }
