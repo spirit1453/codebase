@@ -5,7 +5,7 @@
   "license": "MIT",
   "repository": "https://github.com/spirit1453/codebase.git#strict_eslint",
   "main": "index.js",
-  "peerDependencies": {
+  "dependencies": {
     "babel-eslint": "^5.0.4",
     "eslint-config-standard": "^8.0.0",
     "eslint-plugin-flowtype": "^2.50.0",
