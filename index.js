@@ -1,10 +1,16 @@
 module.exports = {
   'extends': [
-    '@ys/eslint-config-strict'
+    '@ys/eslint-config-strict',
+    'react/recommend'
   ],
-  "plugins": [
-    "react"
-  ],
+  setting: {
+    react: {
+      createClass: 'createReactClass',
+      pragma: 'React',
+      version: '15.0',
+      flowVersion: '0.80.0'
+    }
+  },
   globals: {
     "__DEV__": true
   }
