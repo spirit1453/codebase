@@ -6,6 +6,7 @@
   "repository": "https://github.com/spirit1453/codebase.git#strict_eslint",
   "main": "index.js",
   "dependencies": {
+    "@ys/common-dev-dep": "git+https://github.com/spirit1453/codebase.git#common-dev-dep",
     "babel-cli": "^6.26.0",
     "babel-eslint": "^8.2.6",
     "eslint": "^5.2.0",
