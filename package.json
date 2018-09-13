@@ -1,7 +1,7 @@
 {
-  "name": "@ys/eslint-config-strict",
+  "name": "@ys/eslint-config-web",
   "version": "0.0.1",
-  "description": "eslint strict version",
+  "description": "eslint web version",
   "license": "MIT",
   "repository": "https://github.com/spirit1453/codebase.git#strict_eslint",
   "main": "index.js",
