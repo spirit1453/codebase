@@ -70,7 +70,6 @@ module.exports = {
         "no-sequences": 2,
         "no-unmodified-loop-condition": 2,
         "no-unused-expressions": 2,
-        "no-unused-vars": ["error", { "args": "all" }],
         "no-useless-call": 2,
         "no-useless-return": 2,
         "no-void": 2,
@@ -89,6 +88,9 @@ module.exports = {
         "no-useless-computed-key": 2,
         "no-duplicate-imports": 2,
         "radix": [2, "as-needed"],
+        'no-unused-vars': ["error", {"args": "after-used"}],
+        "no-var": 2,
+
     },
     globals: {},
 
