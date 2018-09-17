@@ -3,7 +3,7 @@ module.exports = {
     '@ys/eslint-config-strict',
     'react/recommend'
   ],
-  setting: {
+  settings: {
     react: {
       createClass: 'createReactClass',
       pragma: 'React',
