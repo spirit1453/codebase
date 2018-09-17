@@ -59,7 +59,6 @@ module.exports = {
         "no-extra-bind": 2,
         "no-extra-label": 2,
         "no-floating-decimal": 2,
-        "no-var": ["error", { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }],
         "no-template-curly-in-string": 2,
         "eqeqeq": ["error", "always"],
         "no-lone-blocks": 2,
