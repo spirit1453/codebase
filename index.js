@@ -15,6 +15,6 @@ module.exports = {
     "__DEV__": true
   },
   rules: {
-    'react/prop-typs': 0
+    'react/prop-types': 0
   }
 }
