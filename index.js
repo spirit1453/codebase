@@ -13,5 +13,8 @@ module.exports = {
   },
   globals: {
     "__DEV__": true
+  },
+  rules: {
+    'react/prop-typs': 0
   }
 }
